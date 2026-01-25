@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ronald Saraga - Embedded Systems Engineer & Technical Analyst">
+  
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto+Mono:wght@300;400&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.8.0/fonts/remixicon.css" rel="stylesheet"/>
+
+  <title>Ronald Saraga | Technology Enthusiast</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container container">
+      <a href="#home" class="logo">
+        <div class="chip-icon">
+          <div class="chip-pin"></div>
+          <div class="chip-pin"></div>
+          <div class="chip-pin"></div>
+          <div class="chip-pin"></div>
+        </div>
+        <span>R<span class="accent">S</span></span>
+      </a>
+
+      <button class="menu-toggle" aria-label="Toggle menu">
+        <i class="ri-menu-line"></i>
+      </button>
+
+      <div class="nav-menu">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="#" class="btn btn-primary cv-btn">
+          <i class="ri-download-line"></i> Download CV
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <span class="badge">
+            <i class="ri-cpu-line"></i>
+            Technology Enthusiast
+          </span>
+          
+          <h1 class="hero-title">
+            <span class="greeting">Hi, I'm </span>
+            <span class="name-highlight">
+              <span class="name-part">Ronald</span>
+              <span class="name-part accent">Saraga</span>
+            </span>
+          </h1>
+          
+          <p class="hero-subtitle">
+            Bridging hardware and software to develop efficient, reliable embedded systems, 
+            with experience in microcontroller programming, PCB design, and IoT architecture.
+          </p>
+          
+          <div class="hero-metrics">
+            <div class="metric">
+              <span class="metric-value">15+</span>
+              <span class="metric-label">Projects</span>
+            </div>
+            <div class="metric">
+              <span class="metric-value">10+</span>
+              <span class="metric-label">Hardware Designs</span>
+            </div>
+            <div class="metric">
+              <span class="metric-value">2+</span>
+              <span class="metric-label">Years Experience</span>
+            </div>
+          </div>
+
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">
+              <i class="ri-mail-line"></i> Contact Me
+            </a>
+            <a href="#projects" class="btn btn-outline">
+              <i class="ri-eye-line"></i> View Projects
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="circuit-card">
+            <div class="circuit-border">
+              <div class="corner tl"></div>
+              <div class="corner tr"></div>
+              <div class="corner bl"></div>
+              <div class="corner br"></div>
+            </div>
+            
+            <div class="profile-image">
+              <img src="photo/profile.png" 
+                   alt="Ronald Saraga">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="terminal-preview">
+        <div class="terminal-header">
+          <div class="terminal-dots">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+          </div>
+          <span class="terminal-title">system_diagnostics.sh</span>
+        </div>
+        <div class="terminal-body">
+          <p><span class="prompt">$</span> <span class="command">cat</span> expertise.txt</p>
+          <p class="output">> Embedded Systems • PCB Design • Microcontrollers • C/C++ • IoT</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-header-container">
+          <div class="section-title-wrapper">
+            <div class="section-icon">
+              <i class="ri-code-s-slash-line"></i>
+            </div>
+            <h2 class="section-title">Technical Expertise</h2>
+          </div>
+          <div class="section-indicator"></div>
+        </div>
+        <p class="section-subtitle">Hardware design, firmware development, and embedded software</p>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-category">
+          <div class="skill-header">
+            <i class="ri-cpu-line"></i>
+            <h3>Hardware Design</h3>
+          </div>
+          <div class="skill-list">
+            <div class="skill-item">
+              <span>PCB Design & Layout</span>
+              <div class="skill-bar">
+                <div class="skill-level" style="width: 70%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span>Microcontroller Programming</span>
+              <div class="skill-bar">
+                <div class="skill-level" style="width: 85%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span>Circuit Analysis</span>
+              <div class="skill-bar">
+                <div class="skill-level" style="width: 80%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span>Schematic Design</span>
+              <div class="skill-bar">
+                <div class="skill-level" style="width: 82%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-header">
+            <i class="ri-code-s-slash-line"></i>
+            <h3>Software & Tools</h3>
+          </div>
+          <div class="tools-grid">
+            <div class="tool">
+              <i class="ri-cpu-line"></i>
+              <span>Arduino IDE</span>
+            </div>
+            <div class="tool">
+              <i class="ri-pencil-ruler-line"></i>
+              <span>EasyEDA</span>
+            </div>
+            <div class="tool">
+              <i class="ri-draft-line"></i>
+              <span>AutoCAD</span>
+            </div>
+            <div class="tool">
+              <i class="ri-palette-line"></i>
+              <span>Sketchup</span>
+            </div>
+            <div class="tool">
+              <i class="ri-git-branch-line"></i>
+              <span>Git</span>
+            </div>
+            <div class="tool">
+              <i class="ri-terminal-line"></i>
+              <span>VS Code</span>
+            </div>
+          </div>
+
+          <div class="skill-subsection">
+            <h4>Programming Languages</h4>
+            <div class="languages">
+              <span class="language-tag">C/C++</span>
+              <span class="language-tag">Python</span>
+              <span class="language-tag">JavaScript</span>
+              <span class="language-tag">HTML/CSS</span>
+              <span class="language-tag">Assembly</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-header">
+            <i class="ri-wifi-line"></i>
+            <h3>Embedded Systems</h3>
+          </div>
+          <div class="skill-list">
+            <div class="skill-item">
+              <span>Real-Time Systems</span>
+              <div class="skill-bar">
+                <div class="skill-level" style="width: 80%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span>IoT Protocols</span>
+              <div class="skill-bar">
+                <div class="skill-level" style="width: 75%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span>Sensor Integration</span>
+              <div class="skill-bar">
+                <div class="skill-level" style="width: 88%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span>Wireless Communication</span>
+              <div class="skill-bar">
+                <div class="skill-level" style="width: 80%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section bg-dark">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-header-container">
+          <div class="section-title-wrapper">
+            <div class="section-icon">
+              <i class="ri-projector-line"></i>
+            </div>
+            <h2 class="section-title">Featured Projects</h2>
+          </div>
+          <div class="section-indicator"></div>
+        </div>
+        <p class="section-subtitle">Embedded systems and professional software implementations</p>
+      </div>
+
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-icon">
+              <i class="ri-robot-line"></i>
+            </div>
+            <span class="project-tag highlight">Capstone Project</span>
+          </div>
+          <div class="project-content">
+            <h3>Smart Automated Desk</h3>
+            <p>Voice-controlled height-adjustable desk with IoT capabilities using Arduino and ESP32 microcontroller.</p>
+            
+            <div class="project-tech">
+              <span>Arduino</span>
+              <span>ESP32</span>
+              <span>IoT</span>
+              <span>Voice Control</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-icon">
+              <i class="ri-database-2-line"></i>
+            </div>
+            <span class="project-tag">Professional Project</span>
+          </div>
+          <div class="project-content">
+            <h3>Electronic Management System</h3>
+            <p>Digital system that manages and organizes data electronically, replacing manual processes to improve efficiency and accuracy.</p>
+            
+            <div class="project-tech">
+              <span>Web-based</span>
+              <span>Database</span>
+              <span>Reporting</span>
+              <span>Inventory</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-icon">
+              <i class="ri-command-line"></i>
+            </div>
+            <span class="project-tag">DIY Project</span>
+          </div>
+          <div class="project-content">
+            <h3>Custom Quadcopter Drone</h3>
+            <p>A self-built drone designed and assembled from scratch, integrating motors, flight controller, sensors, and control systems to achieve stable flight and responsive maneuvering.</p>
+            
+            <div class="project-tech">
+              <span>Arduino</span>
+              <span>Flight Controller</span>
+              <span>PID Control</span>
+              <span>Sensors</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-icon">
+              <i class="ri-file-excel-2-line"></i>
+            </div>
+            <span class="project-tag">Professional Project</span>
+          </div>
+          <div class="project-content">
+            <h3>Client Database System</h3>
+            <p>Web-based client database with Excel integration for data management, reporting, and analysis.</p>
+            
+            <div class="project-tech">
+              <span>Web-based</span>
+              <span>Excel</span>
+              <span>Database</span>
+              <span>Reporting</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="repository-cta">
+        <div class="repository-card">
+          <div class="repository-icon">
+            <i class="ri-google-drive-fill"></i>
+          </div>
+          <div class="repository-content">
+            <h3>Complete Project Repository</h3>
+            <p>Access all my microcontroller and software projects including schematics and source code.</p>
+            
+            <div class="repository-features">
+              <div class="feature">
+                <i class="ri-file-code-line"></i>
+                <span>Source Code</span>
+              </div>
+              <div class="feature">
+                <i class="ri-screenshot-2-line"></i>
+                <span>Schematics</span>
+              </div>
+              <!-- <div class="feature">
+                <i class="ri-video-line"></i>
+                <span>Demo Videos</span>
+              </div>
+              <div class="feature">
+                <i class="ri-file-text-line"></i>
+                <span>Documentation</span>
+              </div>
+            </div> -->
+            
+            <a href="https://drive.google.com/drive/folders/1Aj_ZTaJ9bWXNB7VKZ0f9rRtlTbK1Dnim?usp=sharing" 
+               target="_blank" 
+               class="btn btn-primary repository-btn">
+              <i class="ri-google-drive-line"></i> Open Google Drive Repository
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-header-container">
+          <div class="section-title-wrapper">
+            <div class="section-icon">
+              <i class="ri-user-line"></i>
+            </div>
+            <h2 class="section-title">About Me</h2>
+          </div>
+          <div class="section-indicator"></div>
+        </div>
+        <p class="section-subtitle">Get to know the person behind the projects</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-images">
+          <div class="main-image">
+            <img src="photo/about me.jpg" 
+                 alt="Ronald Saraga - Profile">
+          </div>
+        </div>
+
+        <div class="about-content">
+          <div class="about-content-header">
+            <h3 class="about-title">Computer Engineering</h3>
+            <div class="about-line"></div>
+          </div>
+          
+          <p class="lead">
+            I specialize in designing embedded systems where hardware meets software to create intelligent, efficient solutions.
+          </p>
+          
+          <p>
+            With a Computer Engineering background and hands-on experience in microcontroller programming, 
+            PCB design, and IoT architecture, I transform complex problems into elegant embedded solutions.
+          </p>
+          
+          <p>
+            My approach combines technical expertise with practical problem-solving, focusing on creating 
+            reliable, efficient systems that bridge the gap between digital and physical worlds.
+          </p>
+          
+          <div class="about-details">
+            <div class="detail-item">
+              <i class="ri-graduation-cap-line"></i>
+              <div>
+                <h4>Education</h4>
+                <p>Computer Engineering</p>
+              </div>
+            </div>
+            
+            <div class="detail-item">
+              <i class="ri-map-pin-line"></i>
+              <div>
+                <h4>Location</h4>
+                <p>Philippines</p>
+              </div>
+            </div>
+            
+            <div class="detail-item">
+              <i class="ri-briefcase-line"></i>
+              <div>
+                <h4>Experience</h4>
+                <p>2+ Years</p>
+              </div>
+            </div>
+            
+            <div class="detail-item">
+              <i class="ri-projector-line"></i>
+              <div>
+                <h4>Projects</h4>
+                <p>15+ Completed</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="about-contact">
+            <div class="contact-item">
+              <i class="ri-mail-line"></i>
+              <div>
+                <span class="contact-label">Email</span>
+                <span class="contact-value">ronaldsaragacpe@gmail.com</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="ri-phone-line"></i>
+              <div>
+                <span class="contact-label">Phone</span>
+                <span class="contact-value">0927 653 4784</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section bg-dark">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-header-container">
+          <div class="section-title-wrapper">
+            <div class="section-icon">
+              <i class="ri-chat-3-line"></i>
+            </div>
+            <h2 class="section-title">Get In Touch</h2>
+          </div>
+          <div class="section-indicator"></div>
+        </div>
+        <p class="section-subtitle">Let's discuss your next embedded systems project</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="info-card">
+            <div class="info-card-header">
+              <h3>Contact Information</h3>
+              <div class="info-line"></div>
+            </div>
+            
+            <div class="info-item">
+              <i class="ri-mail-line"></i>
+              <div>
+                <h4>Email</h4>
+                <p>ronaldsaragacpe@gmail.com</p>
+                <span class="status">Typically replies within 24 hours</span>
+              </div>
+            </div>
+            
+            <div class="info-item">
+              <i class="ri-phone-line"></i>
+              <div>
+                <h4>Phone</h4>
+                <p>0927 653 4784</p>
+                <span class="status">Available for technical discussions</span>
+              </div>
+            </div>
+            
+            <div class="info-item">
+              <i class="ri-map-pin-line"></i>
+              <div>
+                <h4>Location</h4>
+                <p>Philippines</p>
+                <span class="status">Open to remote collaboration</span>
+              </div>
+            </div>
+            
+            <div class="contact-social">
+              <div class="social-header">
+                <h4>Connect with me</h4>
+                <div class="social-line"></div>
+              </div>
+              <div class="social-links">
+                <a href="https://www.facebook.com/share/1FTHmV5DuZ/" target="_blank" class="social-btn">
+                  <i class="ri-facebook-fill"></i>
+                  <span>Facebook</span>
+                </a>
+                <a href="https://www.linkedin.com/in/ronald-saraga-303151370/" target="_blank" class="social-btn">
+                  <i class="ri-linkedin-fill"></i>
+                  <span>LinkedIn</span>
+                </a>
+                <a href="https://www.instagram.com/it_s_ronald?igsh=MnBwcTkwbHczeTht" target="_blank" class="social-btn">
+                  <i class="ri-instagram-line"></i>
+                  <span>Instagram</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <form
+            class="contact-form"
+            action="https://formspree.io/f/xnjpkwpj"
+            method="POST"
+          >
+
+          <div class="form-header"> 
+            <h3>Send a Message</h3>
+            <div class="form-line"></div>
+          </div>
+
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your name"
+              required
+            >
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="your.email@example.com"
+              required
+            >
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input
+              type="text"
+              id="subject"
+              name="subject"
+              placeholder="Project inquiry"
+            >
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="Describe your project or inquiry..."
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary">
+            <i class="ri-send-plane-line"></i> Send Message
+          </button>
+
+        </form>
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <div class="chip-icon small">
+            <div class="chip-pin"></div>
+            <div class="chip-pin"></div>
+            <div class="chip-pin"></div>
+            <div class="chip-pin"></div>
+          </div>
+          <div>
+            <h4>Ronald Saraga</h4>
+            <p>Computer Engineering Graduates</p>
+          </div>
+        </div>
+        
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+        
+        <div class="footer-social">
+          <a href="https://facebook.com/share/1FTHmV5DuZ/" target="_blank" aria-label="Facebook">
+            <i class="ri-facebook-fill"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/ronald-saraga-303151370/" target="_blank" aria-label="LinkedIn">
+            <i class="ri-linkedin-fill"></i>
+          </a>
+          <a href="https://instagram.com/yourusername" target="_blank" aria-label="Instagram">
+            <i class="ri-instagram-line"></i>
+          </a>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 Ronald Saraga. All rights reserved.</p>
+        
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
