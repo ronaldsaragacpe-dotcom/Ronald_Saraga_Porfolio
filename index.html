@@ -1,682 +1,457 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Ronald Saraga - Embedded Systems Engineer & Technical Analyst">
-  
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto+Mono:wght@300;400&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.8.0/fonts/remixicon.css" rel="stylesheet"/>
-
-  <title>Ronald Saraga | Technology Enthusiast</title>
-  <link rel="stylesheet" href="index.css">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ronald T. Saraga — Data Analyst</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Navigation -->
-  <nav class="navbar">
-    <div class="nav-container container">
-      <a href="#home" class="logo">
-        <div class="chip-icon">
-          <div class="chip-pin"></div>
-          <div class="chip-pin"></div>
-          <div class="chip-pin"></div>
-          <div class="chip-pin"></div>
-        </div>
-        <span>R<span class="accent">S</span></span>
-      </a>
+<nav>
+  <div class="nav-inner">
+    <div class="nav-brand"><span class="nav-dot"></span> RONALD SARAGA</div>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+    </div>
+    <div class="nav-actions">
+      <a class="nav-cta" href="resume/Ronald_Saraga_CV.pdf" onclick="openResumeModal(); return false;">View Resume</a>
+      <a class="nav-cta nav-cta-solid" href="mailto:ronaldsaragacpe@gmail.com">Get in touch</a>
+    </div>
+  </div>
+</nav>
 
-      <button class="menu-toggle" aria-label="Toggle menu">
-        <i class="ri-menu-line"></i>
-      </button>
+<div class="wrap">
 
-      <div class="nav-menu">
-        <a href="#home" class="nav-link">Home</a>
-        <a href="#about" class="nav-link">About</a>
-        <a href="#skills" class="nav-link">Skills</a>
-        <a href="#projects" class="nav-link">Projects</a>
-        <a href="#contact" class="nav-link">Contact</a>
-        <a href="#" class="btn btn-primary cv-btn">
-          <i class="ri-download-line"></i> Download CV
-        </a>
+  <!-- HERO -->
+  <section class="hero" style="border-top:none;">
+    <div>
+      <div class="eyebrow">DATA ANALYST · MAKATI CITY, PH</div>
+      <h1>Turning raw operational<br>data into <span>decisions</span>.</h1>
+      <p class="lead">Computer Engineering graduate specializing in Excel &amp; Power BI dashboards, VBA automation, and data validation for compliance-driven teams.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#projects">View Dashboards ↓</a>
+        <a class="btn btn-ghost" href="mailto:ronaldsaragacpe@gmail.com">ronaldsaragacpe@gmail.com</a>
+      </div>
+      <div class="kpi-row">
+        <div class="kpi"><div class="num" data-value="2" data-suffix="+">0</div><div class="label">Yrs Experience</div></div>
+        <div class="kpi"><div class="num" data-value="1">0</div><div class="label">Certifications</div></div>
+        <div class="kpi"><div class="num" data-value="2">0</div><div class="label">Dashboards Built</div></div>
+        <div class="kpi"><div class="num">BSCpE</div><div class="label">Degree</div></div>
       </div>
     </div>
-  </nav>
 
-  <!-- Hero Section -->
-  <section id="home" class="hero">
-    <div class="container">
-      <div class="hero-grid">
-        <div class="hero-content">
-          <span class="badge">
-            <i class="ri-cpu-line"></i>
-            Technology Enthusiast
-          </span>
-          
-          <h1 class="hero-title">
-            <span class="greeting">Hi, I'm </span>
-            <span class="name-highlight">
-              <span class="name-part">Ronald</span>
-              <span class="name-part accent">Saraga</span>
-            </span>
-          </h1>
-          
-          <p class="hero-subtitle">
-            Bridging hardware and software to develop efficient, reliable embedded systems, 
-            with experience in microcontroller programming, PCB design, and IoT architecture.
-          </p>
-          
-          <div class="hero-metrics">
-            <div class="metric">
-              <span class="metric-value">15+</span>
-              <span class="metric-label">Projects</span>
-            </div>
-            <div class="metric">
-              <span class="metric-value">10+</span>
-              <span class="metric-label">Hardware Designs</span>
-            </div>
-            <div class="metric">
-              <span class="metric-value">2+</span>
-              <span class="metric-label">Years Experience</span>
-            </div>
-          </div>
-
-          <div class="hero-actions">
-            <a href="#contact" class="btn btn-primary">
-              <i class="ri-mail-line"></i> Contact Me
-            </a>
-            <a href="#projects" class="btn btn-outline">
-              <i class="ri-eye-line"></i> View Projects
-            </a>
-          </div>
-        </div>
-
-        <div class="hero-visual">
-          <div class="circuit-card">
-            <div class="circuit-border">
-              <div class="corner tl"></div>
-              <div class="corner tr"></div>
-              <div class="corner bl"></div>
-              <div class="corner br"></div>
-            </div>
-            
-            <div class="profile-image">
-              <img src="photo/profile.png" 
-                   alt="Ronald Saraga">
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="terminal-preview">
-        <div class="terminal-header">
-          <div class="terminal-dots">
-            <span class="dot red"></span>
-            <span class="dot yellow"></span>
-            <span class="dot green"></span>
-          </div>
-          <span class="terminal-title">system_diagnostics.sh</span>
-        </div>
-        <div class="terminal-body">
-          <p><span class="prompt">$</span> <span class="command">cat</span> expertise.txt</p>
-          <p class="output">> Embedded Systems • PCB Design • Microcontrollers • C/C++ • IoT</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Skills Section -->
-  <section id="skills" class="section">
-    <div class="container">
-      <div class="section-header">
-        <div class="section-header-container">
-          <div class="section-title-wrapper">
-            <div class="section-icon">
-              <i class="ri-code-s-slash-line"></i>
-            </div>
-            <h2 class="section-title">Technical Expertise</h2>
-          </div>
-          <div class="section-indicator"></div>
-        </div>
-        <p class="section-subtitle">Hardware design, firmware development, and embedded software</p>
-      </div>
-
-      <div class="skills-grid">
-        <div class="skill-category">
-          <div class="skill-header">
-            <i class="ri-cpu-line"></i>
-            <h3>Hardware Design</h3>
-          </div>
-          <div class="skill-list">
-            <div class="skill-item">
-              <span>PCB Design & Layout</span>
-              <div class="skill-bar">
-                <div class="skill-level" style="width: 70%"></div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <span>Microcontroller Programming</span>
-              <div class="skill-bar">
-                <div class="skill-level" style="width: 85%"></div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <span>Circuit Analysis</span>
-              <div class="skill-bar">
-                <div class="skill-level" style="width: 80%"></div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <span>Schematic Design</span>
-              <div class="skill-bar">
-                <div class="skill-level" style="width: 82%"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="skill-category">
-          <div class="skill-header">
-            <i class="ri-code-s-slash-line"></i>
-            <h3>Software & Tools</h3>
-          </div>
-          <div class="tools-grid">
-            <div class="tool">
-              <i class="ri-cpu-line"></i>
-              <span>Arduino IDE</span>
-            </div>
-            <div class="tool">
-              <i class="ri-pencil-ruler-line"></i>
-              <span>EasyEDA</span>
-            </div>
-            <div class="tool">
-              <i class="ri-draft-line"></i>
-              <span>AutoCAD</span>
-            </div>
-            <div class="tool">
-              <i class="ri-palette-line"></i>
-              <span>Sketchup</span>
-            </div>
-            <div class="tool">
-              <i class="ri-git-branch-line"></i>
-              <span>Git</span>
-            </div>
-            <div class="tool">
-              <i class="ri-terminal-line"></i>
-              <span>VS Code</span>
-            </div>
-          </div>
-
-          <div class="skill-subsection">
-            <h4>Programming Languages</h4>
-            <div class="languages">
-              <span class="language-tag">C/C++</span>
-              <span class="language-tag">Python</span>
-              <span class="language-tag">JavaScript</span>
-              <span class="language-tag">HTML/CSS</span>
-              <span class="language-tag">Assembly</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="skill-category">
-          <div class="skill-header">
-            <i class="ri-wifi-line"></i>
-            <h3>Embedded Systems</h3>
-          </div>
-          <div class="skill-list">
-            <div class="skill-item">
-              <span>Real-Time Systems</span>
-              <div class="skill-bar">
-                <div class="skill-level" style="width: 80%"></div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <span>IoT Protocols</span>
-              <div class="skill-bar">
-                <div class="skill-level" style="width: 75%"></div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <span>Sensor Integration</span>
-              <div class="skill-bar">
-                <div class="skill-level" style="width: 88%"></div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <span>Wireless Communication</span>
-              <div class="skill-bar">
-                <div class="skill-level" style="width: 80%"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Projects Section -->
-  <section id="projects" class="section bg-dark">
-    <div class="container">
-      <div class="section-header">
-        <div class="section-header-container">
-          <div class="section-title-wrapper">
-            <div class="section-icon">
-              <i class="ri-projector-line"></i>
-            </div>
-            <h2 class="section-title">Featured Projects</h2>
-          </div>
-          <div class="section-indicator"></div>
-        </div>
-        <p class="section-subtitle">Embedded systems and professional software implementations</p>
-      </div>
-
-      <div class="projects-grid">
-        <div class="project-card">
-          <div class="project-header">
-            <div class="project-icon">
-              <i class="ri-robot-line"></i>
-            </div>
-            <span class="project-tag highlight">Capstone Project</span>
-          </div>
-          <div class="project-content">
-            <h3>Smart Automated Desk</h3>
-            <p>Voice-controlled height-adjustable desk with IoT capabilities using Arduino and ESP32 microcontroller.</p>
-            
-            <div class="project-tech">
-              <span>Arduino</span>
-              <span>ESP32</span>
-              <span>IoT</span>
-              <span>Voice Control</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-header">
-            <div class="project-icon">
-              <i class="ri-database-2-line"></i>
-            </div>
-            <span class="project-tag">Professional Project</span>
-          </div>
-          <div class="project-content">
-            <h3>Electronic Management System</h3>
-            <p>Digital system that manages and organizes data electronically, replacing manual processes to improve efficiency and accuracy.</p>
-            
-            <div class="project-tech">
-              <span>Web-based</span>
-              <span>Database</span>
-              <span>Reporting</span>
-              <span>Inventory</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-header">
-            <div class="project-icon">
-              <i class="ri-command-line"></i>
-            </div>
-            <span class="project-tag">DIY Project</span>
-          </div>
-          <div class="project-content">
-            <h3>Custom Quadcopter Drone</h3>
-            <p>A self-built drone designed and assembled from scratch, integrating motors, flight controller, sensors, and control systems to achieve stable flight and responsive maneuvering.</p>
-            
-            <div class="project-tech">
-              <span>Arduino</span>
-              <span>Flight Controller</span>
-              <span>PID Control</span>
-              <span>Sensors</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-header">
-            <div class="project-icon">
-              <i class="ri-file-excel-2-line"></i>
-            </div>
-            <span class="project-tag">Professional Project</span>
-          </div>
-          <div class="project-content">
-            <h3>Client Database System</h3>
-            <p>Web-based client database with Excel integration for data management, reporting, and analysis.</p>
-            
-            <div class="project-tech">
-              <span>Web-based</span>
-              <span>Excel</span>
-              <span>Database</span>
-              <span>Reporting</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="repository-cta">
-        <div class="repository-card">
-          <div class="repository-icon">
-            <i class="ri-google-drive-fill"></i>
-          </div>
-          <div class="repository-content">
-            <h3>Complete Project Repository</h3>
-            <p>Access all my microcontroller and software projects including schematics and source code.</p>
-            
-            <div class="repository-features">
-              <div class="feature">
-                <i class="ri-file-code-line"></i>
-                <span>Source Code</span>
-              </div>
-              <div class="feature">
-                <i class="ri-screenshot-2-line"></i>
-                <span>Schematics</span>
-              </div>
-              <!-- <div class="feature">
-                <i class="ri-video-line"></i>
-                <span>Demo Videos</span>
-              </div>
-              <div class="feature">
-                <i class="ri-file-text-line"></i>
-                <span>Documentation</span>
-              </div>
-            </div> -->
-            
-            <a href="https://drive.google.com/drive/folders/1Aj_ZTaJ9bWXNB7VKZ0f9rRtlTbK1Dnim?usp=sharing" 
-               target="_blank" 
-               class="btn btn-primary repository-btn">
-              <i class="ri-google-drive-line"></i> Open Google Drive Repository
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- About Section -->
-  <section id="about" class="section">
-    <div class="container">
-      <div class="section-header">
-        <div class="section-header-container">
-          <div class="section-title-wrapper">
-            <div class="section-icon">
-              <i class="ri-user-line"></i>
-            </div>
-            <h2 class="section-title">About Me</h2>
-          </div>
-          <div class="section-indicator"></div>
-        </div>
-        <p class="section-subtitle">Get to know the person behind the projects</p>
-      </div>
-
-      <div class="about-grid">
-        <div class="about-images">
-          <div class="main-image">
-            <img src="photo/about me.jpg" 
-                 alt="Ronald Saraga - Profile">
-          </div>
-        </div>
-
-        <div class="about-content">
-          <div class="about-content-header">
-            <h3 class="about-title">Computer Engineering</h3>
-            <div class="about-line"></div>
-          </div>
-          
-          <p class="lead">
-            I specialize in designing embedded systems where hardware meets software to create intelligent, efficient solutions.
-          </p>
-          
-          <p>
-            With a Computer Engineering background and hands-on experience in microcontroller programming, 
-            PCB design, and IoT architecture, I transform complex problems into elegant embedded solutions.
-          </p>
-          
-          <p>
-            My approach combines technical expertise with practical problem-solving, focusing on creating 
-            reliable, efficient systems that bridge the gap between digital and physical worlds.
-          </p>
-          
-          <div class="about-details">
-            <div class="detail-item">
-              <i class="ri-graduation-cap-line"></i>
-              <div>
-                <h4>Education</h4>
-                <p>Computer Engineering</p>
-              </div>
-            </div>
-            
-            <div class="detail-item">
-              <i class="ri-map-pin-line"></i>
-              <div>
-                <h4>Location</h4>
-                <p>Philippines</p>
-              </div>
-            </div>
-            
-            <div class="detail-item">
-              <i class="ri-briefcase-line"></i>
-              <div>
-                <h4>Experience</h4>
-                <p>2+ Years</p>
-              </div>
-            </div>
-            
-            <div class="detail-item">
-              <i class="ri-projector-line"></i>
-              <div>
-                <h4>Projects</h4>
-                <p>15+ Completed</p>
-              </div>
-            </div>
-          </div>
-          
-          <div class="about-contact">
-            <div class="contact-item">
-              <i class="ri-mail-line"></i>
-              <div>
-                <span class="contact-label">Email</span>
-                <span class="contact-value">ronaldsaragacpe@gmail.com</span>
-              </div>
-            </div>
-            <div class="contact-item">
-              <i class="ri-phone-line"></i>
-              <div>
-                <span class="contact-label">Phone</span>
-                <span class="contact-value">0927 653 4784</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="section bg-dark">
-    <div class="container">
-      <div class="section-header">
-        <div class="section-header-container">
-          <div class="section-title-wrapper">
-            <div class="section-icon">
-              <i class="ri-chat-3-line"></i>
-            </div>
-            <h2 class="section-title">Get In Touch</h2>
-          </div>
-          <div class="section-indicator"></div>
-        </div>
-        <p class="section-subtitle">Let's discuss your next embedded systems project</p>
-      </div>
-
-      <div class="contact-grid">
-        <div class="contact-info">
-          <div class="info-card">
-            <div class="info-card-header">
-              <h3>Contact Information</h3>
-              <div class="info-line"></div>
-            </div>
-            
-            <div class="info-item">
-              <i class="ri-mail-line"></i>
-              <div>
-                <h4>Email</h4>
-                <p>ronaldsaragacpe@gmail.com</p>
-                <span class="status">Typically replies within 24 hours</span>
-              </div>
-            </div>
-            
-            <div class="info-item">
-              <i class="ri-phone-line"></i>
-              <div>
-                <h4>Phone</h4>
-                <p>0927 653 4784</p>
-                <span class="status">Available for technical discussions</span>
-              </div>
-            </div>
-            
-            <div class="info-item">
-              <i class="ri-map-pin-line"></i>
-              <div>
-                <h4>Location</h4>
-                <p>Philippines</p>
-                <span class="status">Open to remote collaboration</span>
-              </div>
-            </div>
-            
-            <div class="contact-social">
-              <div class="social-header">
-                <h4>Connect with me</h4>
-                <div class="social-line"></div>
-              </div>
-              <div class="social-links">
-                <a href="https://www.facebook.com/share/1FTHmV5DuZ/" target="_blank" class="social-btn">
-                  <i class="ri-facebook-fill"></i>
-                  <span>Facebook</span>
-                </a>
-                <a href="https://www.linkedin.com/in/ronald-saraga-303151370/" target="_blank" class="social-btn">
-                  <i class="ri-linkedin-fill"></i>
-                  <span>LinkedIn</span>
-                </a>
-                <a href="https://www.instagram.com/it_s_ronald?igsh=MnBwcTkwbHczeTht" target="_blank" class="social-btn">
-                  <i class="ri-instagram-line"></i>
-                  <span>Instagram</span>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <form
-            class="contact-form"
-            action="https://formspree.io/f/xnjpkwpj"
-            method="POST"
-          >
-
-          <div class="form-header"> 
-            <h3>Send a Message</h3>
-            <div class="form-line"></div>
-          </div>
-
-          <div class="form-group">
-            <label for="name">Name</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              placeholder="Your name"
-              required
-            >
-          </div>
-
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="your.email@example.com"
-              required
-            >
-          </div>
-
-          <div class="form-group">
-            <label for="subject">Subject</label>
-            <input
-              type="text"
-              id="subject"
-              name="subject"
-              placeholder="Project inquiry"
-            >
-          </div>
-
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea
-              id="message"
-              name="message"
-              rows="5"
-              placeholder="Describe your project or inquiry..."
-              required
-            ></textarea>
-          </div>
-
-          <button type="submit" class="btn btn-primary">
-            <i class="ri-send-plane-line"></i> Send Message
-          </button>
-
-        </form>
-
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-brand">
-          <div class="chip-icon small">
-            <div class="chip-pin"></div>
-            <div class="chip-pin"></div>
-            <div class="chip-pin"></div>
-            <div class="chip-pin"></div>
-          </div>
-          <div>
-            <h4>Ronald Saraga</h4>
-            <p>Computer Engineering Graduates</p>
-          </div>
-        </div>
-        
-        <div class="footer-links">
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#skills">Skills</a>
-          <a href="#projects">Projects</a>
-          <a href="#contact">Contact</a>
-        </div>
-        
-        <div class="footer-social">
-          <a href="https://facebook.com/share/1FTHmV5DuZ/" target="_blank" aria-label="Facebook">
-            <i class="ri-facebook-fill"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/ronald-saraga-303151370/" target="_blank" aria-label="LinkedIn">
-            <i class="ri-linkedin-fill"></i>
-          </a>
-          <a href="https://instagram.com/yourusername" target="_blank" aria-label="Instagram">
-            <i class="ri-instagram-line"></i>
-          </a>
-        </div>
-      </div>
-      
-      <div class="footer-bottom">
-        <p>&copy; 2026 Ronald Saraga. All rights reserved.</p>
+    <div class="dash-card" id="heroDashCard" onclick="openDashModal('excel')" role="button" tabindex="0" aria-label="Open dashboard preview">
+      <div class="dash-titlebar">
+        <div class="dash-dots"><span></span><span></span><span></span></div>
+        <div class="dash-filename">ecommerce_sales_dashboard.xlsx</div>
         
       </div>
+      <div class="dash-body" style="padding:14px 14px 0;">
+        <img src="photo/dashboard-ecommerce.png" alt="E-Commerce Sales Dashboard built in Excel" style="width:100%; border-radius:6px; border:1px solid var(--line); display:block;">
+      </div>
+      <div class="dash-hint">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        Click to explore full dashboard
+      </div>
     </div>
-  </footer>
+  </section>
 
-  <script src="script.js"></script>
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="sec-head"><span class="sec-num">01</span><h2>About</h2><div class="sec-line"></div></div>
+    <div class="about-grid">
+      <div>
+        <p>I'm a <strong>detail-oriented Data Analyst</strong> with a Computer Engineering background, focused on turning raw operational data into interactive dashboards that track KPIs across Excel and Power BI.</p>
+        <p>My work centers on <strong>Pivot Tables, VBA automation, and data validation</strong> — with a track record of streamlining reporting workflows and improving data accuracy for compliance-driven teams. I care about getting the numbers right before making them look good.</p>
+        <p>Most recently, I've been building dashboards that automate recurring analysis and surface trends that actually change how decisions get made — not just prettier spreadsheets.</p>
+      </div>
+      <div class="info-card">
+        <div class="info-row"><span class="k">Location</span><span class="v">Makati City, PH</span></div>
+        <div class="info-row"><span class="k">Phone</span><span class="v">0927 653 4784</span></div>
+        <div class="info-row"><span class="k">Email</span><span class="v"><a href="mailto:ronaldsaragacpe@gmail.com">ronaldsaragacpe@gmail.com</a></span></div>
+        <div class="info-row"><span class="k">LinkedIn</span><span class="v"><a href="https://www.linkedin.com/in/ronald-saraga-303151370/" target="_blank" rel="noopener">View Profile ↗</a></span></div>
+        <div class="info-row"><span class="k">Projects</span><span class="v"><a href="https://drive.google.com/drive/folders/1aDrDZ8YhpLvjiJi0ErKbQBlTvF_ULuTs" target="_blank" rel="noopener">Google Drive ↗</a></span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="sec-head"><span class="sec-num">02</span><h2>Skills</h2><div class="sec-line"></div></div>
+    <div class="skills-grid">
+      <div class="skill-panel">
+        <h3>◆ Technical</h3>
+        <div class="tag-row">
+          <span class="tag">Microsoft Excel</span>
+          <span class="tag">Pivot Tables</span>
+          <span class="tag">VLOOKUP / XLOOKUP</span>
+          <span class="tag">Excel VBA Macros</span>
+          <span class="tag">Power BI</span>
+          <span class="tag">DAX Measures</span>
+          <span class="tag">MySQL</span>
+          <span class="tag">Data Cleaning</span>
+          <span class="tag">Data Validation</span>
+          <span class="tag">Dashboard Design</span>
+          <span class="tag">Google Sheets</span>
+          <span class="tag">HubSpot</span>
+          <span class="tag">Salesforce</span>
+        </div>
+      </div>
+      <div class="skill-panel">
+        <h3>◆ Soft Skills</h3>
+        <div class="tag-row">
+          <span class="tag">Attention to Detail</span>
+          <span class="tag">Problem Solving</span>
+          <span class="tag">Time Management</span>
+          <span class="tag">Disciplined</span>
+          <span class="tag">Trustworthy</span>
+          <span class="tag">Resourceful</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="sec-head"><span class="sec-num">03</span><h2>Experience</h2><div class="sec-line"></div></div>
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <span class="tl-date">JUNE 2026 — AUGUST 2026</span>
+        <h3>Data Protection Analyst</h3>
+        <ul>
+          <li>Built interactive dashboards using Power Query, PivotTables, Charts, and Excel VBA macros to automate recurring data analysis.</li>
+          <li>Cut manual reporting time and surfaced trends for business decision-making.</li>
+        </ul>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <span class="tl-date">JULY 2025 — APRIL 2026</span>
+        <h3>Technical Support Engineer / Technical Analyst</h3>
+        <ul>
+          <li>Analyzed and validated test worksheets for compliance with Philippine National Standards (PNS).</li>
+          <li>Monitored and maintained company computer systems, including software updates.</li>
+          <li>Led implementation of an Electronic Management System (EMS) for document control.</li>
+          <li>Built an Excel-based Client Database with Pivot Tables and dashboards for automated reporting and visualization.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="sec-head"><span class="sec-num">04</span><h2>Projects</h2><div class="sec-line"></div></div>
+    <div class="proj-grid">
+      <div class="proj-card" onclick="openDashModal('excel')" role="button" tabindex="0" aria-label="Open Ecommerce dashboard preview">
+        <div class="proj-thumb" style="padding:0; align-items:stretch; height:150px; overflow:hidden;">
+          <span class="proj-tag">EXCEL</span>
+          <img src="photo/dashboard-ecommerce.png" alt="E-Commerce Sales Dashboard" style="width:100%; height:100%; object-fit:cover; object-position:top;">
+        </div>
+        <div class="proj-body">
+          <h3>Ecommerce Sales Data Analytics Dashboard</h3>
+          <p>Built with Microsoft Excel, PivotTables, and PivotCharts to analyze sales performance, revenue, orders, product trends, and top-performing categories — providing clear insight for data-driven decisions.</p>
+        </div>
+      </div>
+      <div class="proj-card" onclick="openDashModal('powerbi')" role="button" tabindex="0" aria-label="Open Retail dashboard preview">
+        <div class="proj-thumb" style="padding:0; align-items:stretch; height:150px; overflow:hidden;">
+          <span class="proj-tag">POWER BI</span>
+          <img src="photo/overview.png" alt="Retail Sales Analytics Dashboard - Overview page" style="width:100%; height:100%; object-fit:cover; object-position:top;">
+        </div>
+        <div class="proj-body">
+          <h3>Retail Sales Analytics Dashboard</h3>
+          <p>Interactive 3-page Power BI dashboard (Overview, Year, Month) analyzing retail sales, profitability, and customer trends across regions and categories, using DAX measures for YoY growth, profit margin, and discount impact.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION & CERTS -->
+  <section id="education">
+    <div class="sec-head"><span class="sec-num">05</span><h2>Education &amp; Certifications</h2><div class="sec-line"></div></div>
+    <div class="two-col">
+      <div class="list-panel">
+        <h3>◆ Education</h3>
+        <div class="edu-entry">
+          <h4>Bachelor of Science in Computer Engineering</h4>
+          <div class="sub">Bestlink College of the Philippines</div>
+          <div class="date">2021 — 2025</div>
+        </div>
+      </div>
+      <div class="list-panel">
+        <h3>◆ Certifications &amp; Training</h3>
+      <div class="cert-item" role="button" tabindex="0" onclick="openCertModal(0)">
+        <div>
+          <span class="cname">Google Data Analytics Certificate</span>
+          <span class="csrc">Coursera</span>
+        </div>
+        <span class="cert-chip">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M10 13a5 5 0 0 0 7.5.5l2-2a5 5 0 0 0-7-7l-1.5 1.5"/><path d="M14 11a5 5 0 0 0-7.5-.5l-2 2a5 5 0 0 0 7 7l1.5-1.5"/></svg>
+          View Certificate
+        </span>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="contact-panel">
+      <h2>Let's build something with your data.</h2>
+      <p>Open to Data Analyst roles and dashboard projects. Based in Makati City, PH — available for remote or on-site work.</p>
+      <div class="contact-links">
+        <a class="btn btn-primary" href="mailto:ronaldsaragacpe@gmail.com">Email Me</a>
+        <a class="btn btn-ghost" href="tel:+639276534784">0927 653 4784</a>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/ronald-saraga-303151370/" target="_blank" rel="noopener">LinkedIn ↗</a>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<footer>© 2026 RONALD T. SARAGA </footer>
+
+<!-- DASHBOARD MODAL -->
+<div class="modal-overlay" id="dashModalOverlay" onclick="closeModalOnOverlay(event,'dashModalOverlay')">
+  <div class="modal-box" style="max-width:640px; position:relative;">
+    <div class="modal-close" onclick="closeModal('dashModalOverlay')">✕</div>
+      <div class="dash-titlebar dash-titlebar-modal">
+        <div class="dash-dots"><span></span><span></span><span></span></div>
+        <div class="dash-filename" id="dashModalFilename">retail_sales_dashboard.pbix</div>
+      </div>
+    <div class="modal-tabs">
+      <div class="modal-tab" id="tabExcel" onclick="switchDashTab('excel')">Ecommerce · Excel</div>
+      <div class="modal-tab" id="tabPowerbi" onclick="switchDashTab('powerbi')">Retail · Power BI</div>
+    </div>
+    <div class="dash-body">
+      <h4 id="dashModalTitle">Quarterly Revenue by Region</h4>
+      <div class="page-tabs" id="dashModalPageTabs" style="display:none;"></div>
+      <div class="chart-area" id="dashModalChart" style="height:180px;"></div>
+      <div class="dash-legend">
+        <span><span class="dot-blue"></span> <span id="legendA">Revenue</span></span>
+        <span><span class="dot-teal"></span> <span id="legendB">YoY Growth</span></span>
+      </div>
+      <div class="dash-stats" id="dashModalStats"></div>
+      <p style="margin-top:20px; font-size:13.5px; color:var(--muted); line-height:1.6;" id="dashModalDesc"></p>
+      <a href="https://drive.google.com/drive/folders/1aDrDZ8YhpLvjiJi0ErKbQBlTvF_ULuTs" target="_blank" rel="noopener" class="btn btn-primary" style="margin-top:18px; display:inline-flex;">Open in Drive ↗</a>
+    </div>
+  </div>
+</div>
+
+<!-- CERTIFICATE MODAL -->
+<div class="modal-overlay" id="certModalOverlay" onclick="closeModalOnOverlay(event,'certModalOverlay')">
+  <div class="modal-box" style="max-width:520px; position:relative;">
+    <div class="modal-close" onclick="closeModal('certModalOverlay')">✕</div>
+    <div class="cert-card" style="padding:20px;">
+      <img id="certImage" src="" alt="Certificate" style="position:relative; width:100%; border-radius:8px; border:1px solid var(--line-strong); margin-bottom:18px; display:block;">
+      <h3 id="certTitle">Foundations: Data, Data, Everywhere</h3>
+      <div class="issuer" id="certIssuer">Google · Coursera</div>
+      <p class="desc" id="certDesc"></p>
+      <div class="seal">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l2.4 4.8L20 8l-4 4 1 5.6L12 15l-5 2.6 1-5.6-4-4 5.6-1.2z"/></svg>
+        VERIFIED · RONALD T. SARAGA
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- RESUME MODAL -->
+<div class="modal-overlay" id="resumeModalOverlay" onclick="closeModalOnOverlay(event,'resumeModalOverlay')">
+  <div class="modal-box" style="max-width:700px; position:relative;">
+    <div class="modal-close" onclick="closeModal('resumeModalOverlay')">✕</div>
+    <div class="dash-titlebar">
+      <div class="dash-dots"><span></span><span></span><span></span></div>
+      <div class="dash-filename">Ronald_Saraga_Resume.pdf</div>
+      <a href="resume/Ronald_Saraga_CV.pdf" download="resume/Ronald_Saraga_CV.pdf" class="resume-download-btn">Download ↓</a>
+    </div>
+    <div style="padding:16px;">
+      <iframe src="resume/Ronald_Saraga_CV.pdf" title="Ronald Saraga Resume" style="width:100%; height:70vh; border:1px solid var(--line); border-radius:8px; background:#fff;"></iframe>
+    </div>
+  </div>
+</div>
+
+
+<script>
+  /* ---------- DATA ---------- */
+  const dashData = {
+    powerbi: {
+      filename: 'retail_sales_dashboard.pbix',
+      title: 'Retail Sales Analytics Dashboard',
+      desc: 'Interactive 3-page Power BI dashboard analyzing retail sales, profitability, and customer trends across regions and product categories — using DAX measures for year-over-year growth, profit margin, and discount impact analysis. Browse the Overview, Year, and Month report pages below.',
+      pages: [
+        { label: 'Overview', image: 'photo/overview.png' },
+        { label: 'Year', image: 'photo/year.png' },
+        { label: 'Month', image: 'photo/month.png' }
+      ]
+    },
+    excel: {
+      filename: 'ecommerce_sales_dashboard.xlsx',
+      title: 'E-Commerce Sales Dashboard',
+      image: 'photo/dashboard-ecommerce.png',
+      desc: 'E-Commerce Sales Analytics Dashboard built in Microsoft Excel with PivotTables and PivotCharts — analyzing sales performance, revenue, orders, product trends, and top-performing categories across 2022–2024.'
+    }
+  };
+
+  const certData = [
+    { image:'photo/cert-google-data-analytics.png', title:'Foundations: Data, Data, Everywhere', issuer:'Google · Coursera', desc:'Course certificate from the Google Data Analytics program, completed by Ronald Tumanot Saraga. Verified at coursera.org/verify/M03PBWKMCBTL.' }
+  ];
+
+  let activePowerbiPage = 0;
+
+  /* ---------- DASHBOARD MODAL ---------- */
+  function renderPowerbiImage(){
+    const d = dashData.powerbi;
+    const page = d.pages[activePowerbiPage];
+    const chart = document.getElementById('dashModalChart');
+    chart.style.height = 'auto';
+    chart.style.display = 'block';
+    chart.innerHTML = `<img src="${page.image}" alt="${d.title} - ${page.label} page" style="width:100%; border-radius:6px; border:1px solid var(--line); display:block;">`;
+
+    document.querySelectorAll('#dashModalPageTabs .page-tab').forEach((el, i) => {
+      el.classList.toggle('active', i === activePowerbiPage);
+    });
+  }
+
+  function switchPowerbiPage(i){
+    activePowerbiPage = i;
+    renderPowerbiImage();
+  }
+
+  function renderDashTab(key){
+    const d = dashData[key];
+    document.getElementById('dashModalFilename').textContent = d.filename;
+    document.getElementById('dashModalTitle').textContent = d.title;
+    document.getElementById('dashModalDesc').textContent = d.desc;
+
+    document.getElementById('legendA').parentElement.parentElement.style.display = 'none';
+    document.getElementById('dashModalStats').style.display = 'none';
+
+    const pageTabsEl = document.getElementById('dashModalPageTabs');
+
+    if(key === 'powerbi'){
+      activePowerbiPage = 0;
+      pageTabsEl.style.display = 'flex';
+      pageTabsEl.innerHTML = d.pages.map((p, i) =>
+        `<div class="page-tab${i === 0 ? ' active' : ''}" onclick="switchPowerbiPage(${i})">${p.label}</div>`
+      ).join('');
+      renderPowerbiImage();
+    } else {
+      pageTabsEl.style.display = 'none';
+      pageTabsEl.innerHTML = '';
+      const chart = document.getElementById('dashModalChart');
+      chart.style.height = 'auto';
+      chart.style.display = 'block';
+      if(d.image){
+        chart.innerHTML = `<img src="${d.image}" alt="${d.title}" style="width:100%; border-radius:6px; border:1px solid var(--line); display:block;">`;
+      } else {
+        chart.innerHTML = `<div style="border:1px dashed var(--line-strong); border-radius:8px; padding:44px 20px; text-align:center; color:var(--muted-2); font-family:'IBM Plex Mono', monospace; font-size:12px;">
+          <div style="font-size:26px; margin-bottom:10px;">◌</div>
+          Dashboard preview coming soon
+        </div>`;
+      }
+    }
+
+    document.getElementById('tabExcel').classList.toggle('active', key === 'excel');
+    document.getElementById('tabPowerbi').classList.toggle('active', key === 'powerbi');
+  }
+
+  function switchDashTab(key){ renderDashTab(key); }
+
+  function openDashModal(key){
+    renderDashTab(key || 'powerbi');
+    document.getElementById('dashModalOverlay').classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  /* ---------- RESUME MODAL ---------- */
+  function openResumeModal(){
+    document.getElementById('resumeModalOverlay').classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  /* ---------- CERTIFICATE MODAL ---------- */
+  function openCertModal(index){
+    const c = certData[index];
+    document.getElementById('certImage').src = c.image;
+    document.getElementById('certTitle').textContent = c.title;
+    document.getElementById('certIssuer').textContent = c.issuer;
+    document.getElementById('certDesc').textContent = c.desc;
+    document.getElementById('certModalOverlay').classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  /* ---------- SHARED MODAL HELPERS ---------- */
+  function closeModal(id){
+    document.getElementById(id).classList.remove('open');
+    document.body.style.overflow = '';
+  }
+  function closeModalOnOverlay(e, id){
+    if(e.target.id === id) closeModal(id);
+  }
+  document.addEventListener('keydown', (e)=>{
+    if(e.key === 'Escape'){
+      closeModal('dashModalOverlay');
+      closeModal('certModalOverlay');
+    }
+  });
+  // allow keyboard activation (Enter) on role="button" elements
+  document.querySelectorAll('[role="button"][tabindex]').forEach(el=>{
+    el.addEventListener('keydown', (e)=>{
+      if(e.key === 'Enter'){ el.click(); }
+    });
+  });
+
+  /* ---------- NAV SCROLLSPY ---------- */
+  const navLinks = document.querySelectorAll('.nav-links a');
+  const sections = Array.from(navLinks).map(a => document.querySelector(a.getAttribute('href')));
+  function updateActiveNav(){
+    let current = sections[0];
+    sections.forEach(sec=>{
+      if(sec && window.scrollY >= sec.offsetTop - 140){ current = sec; }
+    });
+    navLinks.forEach(a=>{
+      a.classList.toggle('active', a.getAttribute('href') === '#' + current.id);
+    });
+  }
+  window.addEventListener('scroll', updateActiveNav);
+  updateActiveNav();
+
+  /* ---------- KPI COUNT-UP ---------- */
+  function animateKpi(el, target, suffix, prefix){
+    let start = 0;
+    const isDecimal = target % 1 !== 0;
+    const duration = 900;
+    const startTime = performance.now();
+    function tick(now){
+      const progress = Math.min((now - startTime) / duration, 1);
+      const eased = 1 - Math.pow(1 - progress, 3);
+      const value = isDecimal ? (target*eased).toFixed(1) : Math.round(target*eased);
+      el.textContent = (prefix||'') + value + (suffix||'');
+      if(progress < 1) requestAnimationFrame(tick);
+    }
+    requestAnimationFrame(tick);
+  }
+  const kpiObserver = new IntersectionObserver((entries)=>{
+    entries.forEach(entry=>{
+      if(entry.isIntersecting){
+        const el = entry.target;
+        const raw = el.dataset.value;
+        if(raw !== undefined){
+          animateKpi(el, parseFloat(raw), el.dataset.suffix || '', el.dataset.prefix || '');
+        }
+        kpiObserver.unobserve(el);
+      }
+    });
+  }, { threshold: 0.6 });
+  document.querySelectorAll('.kpi .num[data-value]').forEach(el => kpiObserver.observe(el));
+</script>
+
 </body>
 </html>
